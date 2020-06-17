@@ -1,13 +1,18 @@
 <template>
-    <div>
-        <text-input></text-input>
+    <div class="login-box">
+        <h1 class="login-box--title">Login</h1>
+        <namebox></namebox>
+        <passwordbox></passwordbox>
+        <buttons></buttons>
     </div>
 </template>
 <script>
-import textInput from './parts/textInput'
+import namebox from './parts/namebox'
+import passwordbox from './parts/passwordbox'
+import buttons from './parts/buttons'
 
 export default {
-    components: {textInput}
+    components: {namebox, passwordbox, buttons}
     
 }
 </script>

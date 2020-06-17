@@ -1,5 +1,12 @@
 var path = require('path')
 var webpack = require('webpack')
+const postCSSPlugins = [
+  require('postcss-import'),
+  require('postcss-simple-vars'),
+  require('postcss-nested'),
+  require('autoprefixer')
+]
+
 
 module.exports = {
   entry: './src/main.js',
@@ -14,7 +21,11 @@ module.exports = {
         test: /\.css$/,
         use: [
           'vue-style-loader',
-          'css-loader'
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {plugins: postCSSPlugins}
+          },
         ],
       },      {
         test: /\.vue$/,

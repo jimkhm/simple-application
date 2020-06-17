@@ -6,6 +6,7 @@
 
 <script>
 import login from './login'
+import './assets/style/style.css';
 
 export default {
   name: 'app',
