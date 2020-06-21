@@ -50,5 +50,10 @@
         cursor: pointer;
         margin: 12px 0;
     }
-}
 
+    &--link{
+        text-align: center;
+        color: green;
+
+    }
+}
