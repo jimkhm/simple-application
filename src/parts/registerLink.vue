@@ -1,7 +1,5 @@
 <template>
-    <div class="login-box--link">
-        <input type="button"  @click="changeRegisterFlag" >Sign up</input>
-    </div>
+        <input type="button" class="login-box--link" @click="changeRegisterFlag" value="Sign up" />
 </template>
 <script>
 export default {
